@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAD AIRPORT | Aviation Community</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#071426;color:#fff;font-family:Arial,sans-serif}
+header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#071426,#123d70)}
+.logo{width:115px;height:115px;border-radius:50%;object-fit:cover;border:3px solid #35aaff}
+h1{font-size:38px;letter-spacing:4px;margin:15px 0 5px}
+.subtitle{color:#76c8ff;letter-spacing:3px;font-size:12px}
+nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:17px;background:#0c2038}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#55baff}
+main{max-width:1000px;margin:auto;padding:25px 18px}
+section{margin:25px 0;padding:25px;background:#10243c;border:1px solid #21496e;border-radius:15px}
+h2{color:#57baff;margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.card{background:#0a1a2d;padding:20px;border-radius:12px;border:1px solid #24496b}
+.card h3{color:#69c5ff;margin-top:0}
+.rule{padding:13px;margin:10px 0;background:#0a1a2d;border-radius:8px;border-left:4px solid #39aaff}
+button{background:#1688df;color:white;border:0;padding:13px 22px;border-radius:8px;font-weight:bold;cursor:pointer}
+button:hover{background:#35aaff}
+footer{text-align:center;padding:25px;color:#8ba7c2}
+</style>
+</head>
+<body>
+
+<header>
+<img class="logo" src="https://i.ibb.co/rDkKKPN/file-000000000fe88210af227b65ad40ed7e.png" alt="MAD AIRPORT Logo">
+<h1>MAD AIRPORT</h1>
+<div class="subtitle">OFFICIAL AVIATION COMMUNITY</div>
+</header>
+
+<nav>
+<a href="#welcome">Home</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#gallery">Aircraft Gallery</a>
+<a href="#rules">Rules</a>
+<a href="#staff">Staff Team</a>
+</nav>
+
+<main>
+<section id="welcome">
+<h2>Welcome to MAD AIRPORT ✈️</h2>
+<p>Welcome aboard! MAD AIRPORT is an aviation community for aircraft lovers, aviation fans and everyone who enjoys the world of flight.</p>
+<p>Explore our community, meet other members and enjoy your stay!</p>
+</section>
+
+<section id="dashboard">
+<h2>Airport Dashboard</h2>
+<div class="cards">
+<div class="card"><h3>✈️ Community</h3><p>Meet aviation enthusiasts.</p></div>
+<div class="card"><h3>📸 Aircraft Gallery</h3><p>Explore aircraft photography.</p></div>
+<div class="card"><h3>🛡️ Safety</h3><p>Respect our community rules.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Aircraft Gallery</h2>
+<div class="cards">
+<div class="card"><h3>🛫 Commercial Aircraft</h3><p>Discover passenger aircraft.</p></div>
+<div class="card"><h3>🛩️ Private Aircraft</h3><p>Explore private aviation.</p></div>
+<div class="card"><h3>🛬 Military Aircraft</h3><p>Discover military aviation.</p></div>
+</div>
+</section>
+
+<section id="rules">
+<h2>📋 Server Rules</h2>
+<div class="rule">01 — Respect Everyone</div>
+<div class="rule">02 — No Spam</div>
+<div class="rule">03 — No Unapproved Advertising</div>
+<div class="rule">04 — Protect Privacy</div>
+<div class="rule">05 — Listen to Staff</div>
+<div class="rule">06 — No Scams</div>
+<div class="rule">07 — Use Channels Correctly</div>
+<div class="rule">08 — Follow Discord Rules</div>
+<div class="rule">09 — No Impersonation</div>
+<div class="rule">10 — Keep It Friendly</div>
+</section>
+
+<section id="staff">
+<h2>🛡️ Staff Team</h2>
+<div class="cards">
+<div class="card"><h3>👑 Server Owner</h3><p>Community leadership</p></div>
+<div class="card"><h3>⚙️ Administrator</h3><p>Server management</p></div>
+<div class="card"><h3>🛡️ Moderator</h3><p>Community support</p></div>
+</div>
+</section>
+
+<section style="text-align:center">
+<h2>Ready to Join MAD AIRPORT?</h2>
+<p>Our Discord invite will be added here soon!</p>
+<button disabled>INVITE COMING SOON</button>
+</section>
+</main>
+
+<footer>© 2026 MAD AIRPORT · OFFICIAL AVIATION COMMUNITY</footer>
+</body>
+</html>
