@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#071426">
-<meta name="description" content="Welcome to MAD AIRPORT, the official aviation community.">
-<title>MAD AIRPORT | Aviation Community</title>
+<meta name="description" content="MAD AIRPORT Official Aviation Community and Roblox Game Matches">
+<title>MAD AIRPORT | Official Community</title>
 
 <style>
 * {
@@ -50,17 +50,20 @@ h1 {
 nav {
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 18px 12px;
     background: #0c2038;
     border-bottom: 1px solid #21496e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -80,6 +83,7 @@ section {
     background: #10243c;
     border: 1px solid #21496e;
     border-radius: 16px;
+    scroll-margin-top: 85px;
 }
 
 h2 {
@@ -126,6 +130,10 @@ p {
     color: #e5f1ff;
 }
 
+.rule p {
+    margin-bottom: 0;
+}
+
 .join-section {
     text-align: center;
     background: linear-gradient(135deg, #10243c, #123d70);
@@ -148,6 +156,15 @@ p {
     transform: translateY(-2px);
 }
 
+.match-image {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 2px solid #35aaff;
+}
+
 footer {
     text-align: center;
     padding: 28px 15px;
@@ -158,7 +175,11 @@ footer {
 
 @media (max-width: 500px) {
     nav {
-        gap: 15px;
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 11px;
     }
 
     section {
@@ -188,159 +209,242 @@ footer {
 <nav>
     <a href="#welcome">HOME</a>
     <a href="#dashboard">DASHBOARD</a>
-    <a href="#gallery">AIRCRAFT GALLERY</a>
+    <a href="#gallery">AIRCRAFT</a>
     <a href="#rules">RULES</a>
-    <a href="#staff">STAFF TEAM</a>
+    <a href="#staff">STAFF</a>
+    <a href="#match-rules">ROBLOX MATCHES</a>
 </nav>
 
 <main>
 
-    <section id="welcome">
-        <h2>✈️ Welcome to MAD AIRPORT</h2>
+<!-- WELCOME -->
 
+<section id="welcome">
+    <h2>✈️ Welcome to MAD AIRPORT</h2>
+
+    <p>
+        Welcome aboard! MAD AIRPORT is an aviation community
+        for aircraft lovers, aviation fans, plane spotters,
+        and everyone who enjoys the world of aviation.
+    </p>
+
+    <p>
+        Meet other aviation enthusiasts, explore aircraft,
+        and become part of our community!
+    </p>
+
+    <a class="join-button"
+       href="https://discord.gg/WBRjWgzCtf"
+       target="_blank"
+       rel="noopener noreferrer">
+       ✈️ JOIN OUR DISCORD
+    </a>
+</section>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard">
+    <h2>🛫 Community Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>✈️ Aviation Community</h3>
+            <p>
+                Connect with people who share your passion
+                for aviation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📸 Aircraft Photography</h3>
+            <p>
+                Discover aircraft photography and plane spotting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Community Safety</h3>
+            <p>
+                Help keep MAD AIRPORT friendly and welcoming.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Roblox Matches</h3>
+            <p>
+                Participate in organized Roblox game matches.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- AIRCRAFT GALLERY -->
+
+<section id="gallery">
+    <h2>🛩️ Aircraft Gallery</h2>
+
+    <p>
+        Explore different areas of aviation.
+        Aircraft photographs can be added to this gallery later.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🛫 Commercial Aircraft</h3>
+            <p>Passenger aircraft and airlines around the world.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛩️ Private Aviation</h3>
+            <p>Discover private planes and general aviation.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Military Aviation</h3>
+            <p>Explore military aircraft and aviation history.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVER RULES -->
+
+<section id="rules">
+    <h2>📋 MAD AIRPORT Server Rules</h2>
+
+    <div class="rule">01 — Respect Everyone</div>
+    <div class="rule">02 — No Spam</div>
+    <div class="rule">03 — No Unapproved Advertising</div>
+    <div class="rule">04 — Protect Privacy</div>
+    <div class="rule">05 — Listen to Staff</div>
+    <div class="rule">06 — No Scams</div>
+    <div class="rule">07 — Use Channels Correctly</div>
+    <div class="rule">08 — Follow Discord Rules</div>
+    <div class="rule">09 — No Impersonation</div>
+    <div class="rule">10 — Keep It Friendly</div>
+</section>
+
+<!-- STAFF TEAM -->
+
+<section id="staff">
+    <h2>🛡️ Our Staff Team</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>👑 Server Owner</h3>
+            <p>Leads the MAD AIRPORT community.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Administrator</h3>
+            <p>Helps manage and organize the server.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Moderator</h3>
+            <p>Helps members and enforces server rules.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ROBLOX GAME MATCHES -->
+
+<section id="match-rules">
+
+    <h2>🎮 ROBLOX GAME MATCHES</h2>
+
+    <img
+        class="match-image"
+        src="https://i.ibb.co/yBW7c7SJ/file-0000000098fc8211abdeb2c478c2b62c.png"
+        alt="MAD AIRPORT Roblox Game Matches"
+    >
+
+    <p>
+        Welcome to MAD AIRPORT Roblox Game Matches!
+        All participants must follow these match rules.
+    </p>
+
+    <div class="rule">
+        <strong>01 — Match Verification</strong>
         <p>
-            Welcome aboard! MAD AIRPORT is an aviation community
-            for aircraft lovers, aviation fans, plane spotters,
-            and everyone who enjoys the world of aviation.
+            Every match must be checked and verified before it begins.
         </p>
+    </div>
 
+    <div class="rule">
+        <strong>02 — Checking Live Camera (CLC)</strong>
         <p>
-            Meet other aviation enthusiasts, explore aircraft,
-            and become part of our community!
+            Matches must include Checking Live Camera (CLC),
+            according to the match requirements.
         </p>
+    </div>
 
+    <div class="rule">
+        <strong>03 — Fair Play Test</strong>
+        <p>
+            Every match must be tested and checked for fairness
+            before the official game starts.
+        </p>
+    </div>
+
+    <div class="rule">
+        <strong>04 — Teams or Solo</strong>
+        <p>
+            Each player must have a teammate or register to play solo.
+        </p>
+    </div>
+
+    <div class="rule">
+        <strong>05 — Club Name and Picture</strong>
+        <p>
+            Every participant must provide a club name.
+            If no club picture is uploaded, an AI-generated
+            picture will be created for the club.
+        </p>
+    </div>
+
+    <div class="rule">
+        <strong>06 — Roblox Game Requirement</strong>
+        <p>
+            All official matches must take place in the agreed Roblox game.
+        </p>
+    </div>
+
+    <div style="text-align:center; margin-top:25px;">
         <a
             class="join-button"
             href="https://discord.gg/WBRjWgzCtf"
             target="_blank"
-            rel="noopener noreferrer"
-        >
-            ✈️ JOIN OUR DISCORD
+            rel="noopener noreferrer">
+            🎮 JOIN MAD AIRPORT
         </a>
-    </section>
+    </div>
 
-    <section id="dashboard">
-        <h2>🛫 Community Dashboard</h2>
+</section>
 
-        <div class="cards">
+<!-- FINAL DISCORD INVITE -->
 
-            <div class="card">
-                <h3>✈️ Aviation Community</h3>
-                <p>
-                    Connect with people who share your passion
-                    for aviation.
-                </p>
-            </div>
+<section class="join-section">
+    <h2>✈️ READY FOR BOARDING?</h2>
 
-            <div class="card">
-                <h3>📸 Aircraft Photography</h3>
-                <p>
-                    Discover the amazing world of aircraft
-                    photography and plane spotting.
-                </p>
-            </div>
+    <p>
+        Join MAD AIRPORT and become part of our
+        aviation and gaming community!
+    </p>
 
-            <div class="card">
-                <h3>🛡️ Community Safety</h3>
-                <p>
-                    Help keep MAD AIRPORT friendly, welcoming,
-                    and safe for everyone.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="gallery">
-        <h2>🛩️ Aircraft Gallery</h2>
-
-        <p>
-            Explore different areas of aviation. Aircraft
-            photographs can be added to this gallery later.
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🛫 Commercial Aircraft</h3>
-                <p>
-                    Passenger aircraft and the airlines
-                    that connect the world.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🛩️ Private Aviation</h3>
-                <p>
-                    Discover private planes and general aviation.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🛡️ Military Aviation</h3>
-                <p>
-                    Explore military aircraft and aviation history.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="rules">
-        <h2>📋 MAD AIRPORT Server Rules</h2>
-
-        <div class="rule">01 — Respect Everyone</div>
-        <div class="rule">02 — No Spam</div>
-        <div class="rule">03 — No Unapproved Advertising</div>
-        <div class="rule">04 — Protect Privacy</div>
-        <div class="rule">05 — Listen to Staff</div>
-        <div class="rule">06 — No Scams</div>
-        <div class="rule">07 — Use Channels Correctly</div>
-        <div class="rule">08 — Follow Discord Rules</div>
-        <div class="rule">09 — No Impersonation</div>
-        <div class="rule">10 — Keep It Friendly</div>
-    </section>
-
-    <section id="staff">
-        <h2>🛡️ Our Staff Team</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>👑 Server Owner</h3>
-                <p>Leads the MAD AIRPORT community.</p>
-            </div>
-
-            <div class="card">
-                <h3>⚙️ Administrator</h3>
-                <p>Helps manage and organize the server.</p>
-            </div>
-
-            <div class="card">
-                <h3>🛡️ Moderator</h3>
-                <p>Helps members and enforces server rules.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="join-section">
-        <h2>Ready for Boarding?</h2>
-
-        <p>
-            Join MAD AIRPORT and become part of our
-            aviation community!
-        </p>
-
-        <a
-            class="join-button"
-            href="https://discord.gg/WBRjWgzCtf"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            ✈️ JOIN MAD AIRPORT
-        </a>
-    </section>
+    <a
+        class="join-button"
+        href="https://discord.gg/WBRjWgzCtf"
+        target="_blank"
+        rel="noopener noreferrer">
+        ✈️ JOIN MAD AIRPORT
+    </a>
+</section>
 
 </main>
 
