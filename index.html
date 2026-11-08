@@ -1,455 +1,128 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#071426">
-<title>MAD AIRPORT | Official Aviation Community</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    background: #071426;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    text-align: center;
-    padding: 40px 15px;
-    background: linear-gradient(135deg, #071426, #123d70);
-}
-
-.logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #35aaff;
-}
-
-h1 {
-    font-size: clamp(30px, 6vw, 46px);
-    letter-spacing: 5px;
-    margin: 18px 0 8px;
-}
-
-.subtitle {
-    color: #76c8ff;
-    letter-spacing: 3px;
-    font-size: 12px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
-    padding: 18px 12px;
-    background: #0c2038;
-    border-bottom: 1px solid #21496e;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #55baff;
-}
-
-main {
-    max-width: 1050px;
-    margin: auto;
-    padding: 20px;
-}
-
-section {
-    margin: 25px 0;
-    padding: 28px;
-    background: #10243c;
-    border: 1px solid #21496e;
-    border-radius: 16px;
-    scroll-margin-top: 85px;
-}
-
-h2 {
-    color: #57baff;
-    margin-top: 0;
-    font-size: 25px;
-}
-
-p {
-    line-height: 1.7;
-    color: #d5e5f5;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 16px;
-}
-
-.card {
-    background: #0a1a2d;
-    padding: 22px;
-    border-radius: 12px;
-    border: 1px solid #24496b;
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: #35aaff;
-}
-
-.card h3 {
-    color: #69c5ff;
-    margin-top: 0;
-}
-
-.rule {
-    padding: 15px;
-    margin: 11px 0;
-    background: #0a1a2d;
-    border-radius: 8px;
-    border-left: 4px solid #39aaff;
-    color: #e5f1ff;
-}
-
-.rule p {
-    margin-bottom: 0;
-}
-
-.join-section {
-    text-align: center;
-    background: linear-gradient(135deg, #10243c, #123d70);
-}
-
-.join-button {
-    display: inline-block;
-    margin-top: 12px;
-    background: #1688df;
-    color: white;
-    text-decoration: none;
-    padding: 15px 26px;
-    border-radius: 9px;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.join-button:hover {
-    background: #35aaff;
-}
-
-.match-image {
-    width: 100%;
-    max-width: 650px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-    border: 2px solid #35aaff;
-}
-
-.bot-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    background: #0a1a2d;
-    padding: 24px;
-    border: 1px solid #24496b;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.2s;
-}
-
-.bot-card:hover {
-    transform: translateY(-5px);
-    border-color: #35aaff;
-    box-shadow: 0 0 20px #1688df33;
-}
-
-.bot-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 22px;
-    border: 2px solid #35aaff;
-    margin-bottom: 12px;
-}
-
-.bot-card h3 {
-    color: #69c5ff;
-}
-
-.bot-link {
-    color: #57baff;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 28px 15px;
-    background: #050e1b;
-    color: #8ba7c2;
-    font-size: 13px;
-}
-
-@media (max-width: 500px) {
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 10px;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <img class="logo"
-         src="https://i.ibb.co/rDkKKPN/file-000000000fe88210af227b65ad40ed7e.png"
-         alt="MAD AIRPORT Logo">
-
-    <h1>MAD AIRPORT</h1>
-    <div class="subtitle">OFFICIAL AVIATION COMMUNITY</div>
-</header>
-
-<nav>
-    <a href="#welcome">HOME</a>
-    <a href="#dashboard">DASHBOARD</a>
-    <a href="#gallery">AIRCRAFT</a>
-    <a href="#rules">RULES</a>
-    <a href="#staff">STAFF</a>
-    <a href="#match-rules">ROBLOX MATCHES</a>
-    <a href="#our-bots">OUR BOTS</a>
-</nav>
-
-<main>
-
-<section id="welcome">
-    <h2>✈️ Welcome to MAD AIRPORT</h2>
-    <p>
-        Welcome aboard! MAD AIRPORT is an aviation community
-        for aircraft lovers, aviation fans, plane spotters,
-        and everyone who enjoys the world of aviation.
-    </p>
-    <p>
-        Meet other aviation fans, explore aircraft,
-        and become part of our community!
-    </p>
-    <a class="join-button"
-       href="https://discord.gg/WBRjWgzCtf"
-       target="_blank" rel="noopener noreferrer">
-       ✈️ JOIN OUR DISCORD
-    </a>
-</section>
-
-<section id="dashboard">
-    <h2>🛫 Community Dashboard</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>✈️ Aviation Community</h3>
-            <p>Connect with other aviation fans.</p>
-        </div>
-        <div class="card">
-            <h3>📸 Aircraft Photography</h3>
-            <p>Discover aircraft photography and plane spotting.</p>
-        </div>
-        <div class="card">
-            <h3>🛡️ Community Safety</h3>
-            <p>Help keep MAD AIRPORT friendly and safe.</p>
-        </div>
-        <div class="card">
-            <h3>🎮 Roblox Matches</h3>
-            <p>Take part in Roblox game matches.</p>
-        </div>
-    </div>
-</section>
-
 <section id="gallery">
     <h2>🛩️ Aircraft Gallery</h2>
-    <p>
-        Explore different areas of aviation.
-        Aircraft pictures can be added here later.
-    </p>
+    <p>Explore aircraft from around the world. Select a category to see the aircraft collection.</p>
+
     <div class="cards">
-        <div class="card">
-            <h3>🛫 Commercial Aircraft</h3>
-            <p>Passenger aircraft and airlines around the world.</p>
-        </div>
-        <div class="card">
+        <button class="card gallery-button" onclick="showAircraft('military')">
+            <h3>🛡️ Military Aircraft</h3>
+            <p>Explore 10 military aircraft.</p>
+        </button>
+
+        <button class="card gallery-button" onclick="showAircraft('commercial')">
+            <h3>✈️ Commercial Aircraft</h3>
+            <p>Explore 10 commercial aircraft.</p>
+        </button>
+
+        <button class="card gallery-button" onclick="showAircraft('private')">
             <h3>🛩️ Private Aviation</h3>
-            <p>Discover private planes and general aviation.</p>
-        </div>
-        <div class="card">
-            <h3>🛡️ Military Aviation</h3>
-            <p>Explore military aircraft and aviation history.</p>
-        </div>
+            <p>Explore 10 private aircraft.</p>
+        </button>
     </div>
+
+    <div id="aircraft-list" style="margin-top:25px;"></div>
 </section>
 
-<section id="rules">
-    <h2>📋 MAD AIRPORT Server Rules</h2>
-    <div class="rule">01 — Respect Everyone</div>
-    <div class="rule">02 — No Spam</div>
-    <div class="rule">03 — No Unapproved Advertising</div>
-    <div class="rule">04 — Protect Privacy</div>
-    <div class="rule">05 — Listen to Staff</div>
-    <div class="rule">06 — No Scams</div>
-    <div class="rule">07 — Use Channels Correctly</div>
-    <div class="rule">08 — Follow Discord Rules</div>
-    <div class="rule">09 — No Impersonation</div>
-    <div class="rule">10 — Keep It Friendly</div>
-</section>
+<style>
+.gallery-button {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
 
-<section id="staff">
-    <h2>🛡️ Our Staff Team</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>👑 Server Owner</h3>
-            <p>Leads the MAD AIRPORT community.</p>
-        </div>
-        <div class="card">
-            <h3>⚙️ Administrator</h3>
-            <p>Helps manage the server.</p>
-        </div>
-        <div class="card">
-            <h3>🛡️ Moderator</h3>
-            <p>Helps members and checks the rules.</p>
-        </div>
-    </div>
-</section>
+.aircraft-item {
+    background: #0a1a2d;
+    padding: 16px;
+    margin: 10px 0;
+    border: 1px solid #24496b;
+    border-radius: 10px;
+}
 
-<section id="match-rules">
-    <h2>🎮 ROBLOX GAME MATCHES</h2>
+.aircraft-item h3 {
+    color: #69c5ff;
+    margin-top: 0;
+}
 
-    <img class="match-image"
-         src="https://i.ibb.co/yBW7c7SJ/file-0000000098fc8211abdeb2c478c2b62c.png"
-         alt="MAD AIRPORT Roblox Game Matches">
+.aircraft-item a {
+    color: #57baff;
+    font-weight: bold;
+    text-decoration: none;
+}
+</style>
 
-    <p>
-        Welcome to MAD AIRPORT Roblox Game Matches!
-        All players must follow these rules.
-    </p>
+<script>
+const aircraft = {
+    military: [
+        "F-16 Fighting Falcon",
+        "F-15 Eagle",
+        "F/A-18 Hornet",
+        "Eurofighter Typhoon",
+        "Dassault Rafale",
+        "MiG-29",
+        "Su-27",
+        "A-10 Thunderbolt II",
+        "C-130 Hercules",
+        "P-3 Orion"
+    ],
 
-    <div class="rule">
-        <strong>01 — Match Verification</strong>
-        <p>Every match must be checked before it begins.</p>
-    </div>
+    commercial: [
+        "Airbus A320",
+        "Airbus A350",
+        "Airbus A380",
+        "Boeing 737",
+        "Boeing 747",
+        "Boeing 767",
+        "Boeing 777",
+        "Boeing 787 Dreamliner",
+        "Embraer E175",
+        "ATR 72"
+    ],
 
-    <div class="rule">
-        <strong>02 — Checking Live Camera (CLC)</strong>
-        <p>Matches must include Checking Live Camera (CLC).</p>
-    </div>
+    private: [
+        "Cessna 172",
+        "Cirrus SR22",
+        "Beechcraft Bonanza",
+        "Piper PA-28",
+        "Diamond DA40",
+        "Pilatus PC-12",
+        "Daher TBM 960",
+        "Gulfstream G650",
+        "Bombardier Global 7500",
+        "Embraer Phenom 300"
+    ]
+};
 
-    <div class="rule">
-        <strong>03 — Fair Play Test</strong>
-        <p>Every match must be tested for fairness before the game starts.</p>
-    </div>
+function showAircraft(category) {
+    const list = document.getElementById("aircraft-list");
+    const names = aircraft[category];
 
-    <div class="rule">
-        <strong>04 — Teams or Solo</strong>
-        <p>Each player must have a teammate or play solo.</p>
-    </div>
+    const titles = {
+        military: "🛡️ Military Aircraft",
+        commercial: "✈️ Commercial Aircraft",
+        private: "🛩️ Private Aviation"
+    };
 
-    <div class="rule">
-        <strong>05 — Club Name and Picture</strong>
-        <p>Every player must provide a club name. If no picture is uploaded, an AI-generated picture will be created.</p>
-    </div>
+    list.innerHTML = "<h2>" + titles[category] + "</h2>";
 
-    <div class="rule">
-        <strong>06 — Roblox Game Requirement</strong>
-        <p>All official matches must take place in the agreed Roblox game.</p>
-    </div>
+    names.forEach((name, index) => {
+        const searchUrl =
+            "https://commons.wikimedia.org/w/index.php?search=" +
+            encodeURIComponent(name) +
+            "&title=Special:MediaSearch&type=image";
 
-    <div style="text-align:center; margin-top:25px;">
-        <a class="join-button"
-           href="https://discord.gg/WBRjWgzCtf"
-           target="_blank" rel="noopener noreferrer">
-           🎮 JOIN MAD AIRPORT
-        </a>
-    </div>
-</section>
+        list.innerHTML += `
+            <div class="aircraft-item">
+                <h3>${index + 1}. ${name}</h3>
+                <a href="${searchUrl}" target="_blank"
+                   rel="noopener noreferrer">
+                   DOWNLOAD PHOTOS →
+                </a>
+            </div>
+        `;
+    });
 
-<section id="our-bots">
-    <h2 style="text-align:center;font-size:30px;">
-        🤖 OUR OWN BOTS
-    </h2>
-
-    <p style="text-align:center;color:#76c8ff;">
-        Add them to your server!
-    </p>
-
-    <p style="text-align:center;">
-        Discover our official MAD AIRPORT bots.
-        Click a bot to invite it to your Discord server!
-    </p>
-
-    <div class="cards">
-        <a class="bot-card"
-           href="https://discord.com/oauth2/authorize?client_id=1568303648528662648"
-           target="_blank" rel="noopener noreferrer">
-
-            <img class="bot-image"
-                 src="ticket-bot.jpg"
-                 alt="MAD AIRPORT Ticket Bot">
-
-            <h3>🎟️ MAD AIRPORT Ticket Bot</h3>
-
-            <p>
-                A ticket management bot designed to help
-                Discord servers manage support tickets.
-            </p>
-
-            <span class="bot-link">
-                ADD TO YOUR SERVER →
-            </span>
-        </a>
-    </div>
-</section>
-
-<section class="join-section">
-    <h2>✈️ READY FOR BOARDING?</h2>
-    <p>
-        Join MAD AIRPORT and become part of our
-        aviation and gaming community!
-    </p>
-    <a class="join-button"
-       href="https://discord.gg/WBRjWgzCtf"
-       target="_blank" rel="noopener noreferrer">
-       ✈️ JOIN MAD AIRPORT
-    </a>
-</section>
-
-</main>
-
-<footer>
-    © 2026 MAD AIRPORT<br>
-    OFFICIAL AVIATION COMMUNITY ✈️
-</footer>
-
-</body>
-  </html>
-                                  
+    list.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
