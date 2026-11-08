@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#071426">
+<meta name="description" content="MAD AIRPORT Official Aviation Community">
 <title>MAD AIRPORT | Official Community</title>
 
 <style>
@@ -16,8 +16,8 @@
 body {
     margin: 0;
     background: #071426;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -50,7 +50,7 @@ h1 {
 nav {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 18px 12px;
     background: #0c2038;
@@ -61,9 +61,9 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -108,7 +108,7 @@ p {
     padding: 22px;
     border-radius: 12px;
     border: 1px solid #24496b;
-    transition: 0.2s;
+    transition: transform 0.2s, border-color 0.2s;
 }
 
 .card:hover {
@@ -143,16 +143,17 @@ p {
     display: inline-block;
     margin-top: 12px;
     background: #1688df;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 26px;
     border-radius: 9px;
     font-weight: bold;
-    transition: 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .join-button:hover {
     background: #35aaff;
+    transform: translateY(-2px);
 }
 
 .match-image {
@@ -164,8 +165,6 @@ p {
     border: 2px solid #35aaff;
 }
 
-/* OUR OWN BOTS */
-
 .bot-card {
     display: block;
     text-decoration: none;
@@ -175,13 +174,12 @@ p {
     border: 1px solid #24496b;
     border-radius: 15px;
     text-align: center;
-    transition: 0.2s;
+    transition: transform 0.2s, border-color 0.2s;
 }
 
 .bot-card:hover {
     transform: translateY(-5px);
     border-color: #35aaff;
-    box-shadow: 0 0 20px #1688df33;
 }
 
 .bot-image {
@@ -218,11 +216,11 @@ footer {
 
 @media (max-width: 500px) {
     nav {
-        gap: 12px;
+        gap: 13px;
     }
 
     nav a {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     section {
@@ -242,7 +240,8 @@ footer {
     <img
         class="logo"
         src="https://i.ibb.co/rDkKKPN/file-000000000fe88210af227b65ad40ed7e.png"
-        alt="MAD AIRPORT Logo">
+        alt="MAD AIRPORT Logo"
+    >
 
     <h1>MAD AIRPORT</h1>
     <div class="subtitle">OFFICIAL AVIATION COMMUNITY</div>
@@ -272,7 +271,7 @@ footer {
     </p>
 
     <p>
-        Meet other aviation fans, explore aircraft,
+        Meet other aviation enthusiasts, explore aircraft,
         and become part of our community!
     </p>
 
@@ -293,7 +292,7 @@ footer {
 
         <div class="card">
             <h3>✈️ Aviation Community</h3>
-            <p>Connect with other aviation fans.</p>
+            <p>Connect with people who share your passion for aviation.</p>
         </div>
 
         <div class="card">
@@ -303,12 +302,12 @@ footer {
 
         <div class="card">
             <h3>🛡️ Community Safety</h3>
-            <p>Help keep MAD AIRPORT friendly and safe.</p>
+            <p>Help keep MAD AIRPORT friendly and welcoming.</p>
         </div>
 
         <div class="card">
             <h3>🎮 Roblox Matches</h3>
-            <p>Take part in Roblox game matches.</p>
+            <p>Participate in organized Roblox game matches.</p>
         </div>
 
     </div>
@@ -321,7 +320,7 @@ footer {
 
     <p>
         Explore different areas of aviation.
-        Aircraft pictures can be added here later.
+        Aircraft photographs can be added to this gallery later.
     </p>
 
     <div class="cards">
@@ -375,12 +374,12 @@ footer {
 
         <div class="card">
             <h3>⚙️ Administrator</h3>
-            <p>Helps manage the server.</p>
+            <p>Helps manage and organize the server.</p>
         </div>
 
         <div class="card">
             <h3>🛡️ Moderator</h3>
-            <p>Helps members and checks the rules.</p>
+            <p>Helps members and enforces server rules.</p>
         </div>
 
     </div>
@@ -395,36 +394,37 @@ footer {
     <img
         class="match-image"
         src="https://i.ibb.co/yBW7c7SJ/file-0000000098fc8211abdeb2c478c2b62c.png"
-        alt="MAD AIRPORT Roblox Game Matches">
+        alt="MAD AIRPORT Roblox Game Matches"
+    >
 
     <p>
         Welcome to MAD AIRPORT Roblox Game Matches!
-        All players must follow these rules.
+        All participants must follow these match rules.
     </p>
 
     <div class="rule">
         <strong>01 — Match Verification</strong>
-        <p>Every match must be checked before it begins.</p>
+        <p>Every match must be checked and verified before it begins.</p>
     </div>
 
     <div class="rule">
         <strong>02 — Checking Live Camera (CLC)</strong>
-        <p>Matches must include Checking Live Camera (CLC).</p>
+        <p>Matches must include Checking Live Camera (CLC), according to the match requirements.</p>
     </div>
 
     <div class="rule">
         <strong>03 — Fair Play Test</strong>
-        <p>Every match must be tested for fairness before the game starts.</p>
+        <p>Every match must be tested and checked for fairness before the official game starts.</p>
     </div>
 
     <div class="rule">
         <strong>04 — Teams or Solo</strong>
-        <p>Each player must have a teammate or play solo.</p>
+        <p>Each player must have a teammate or register to play solo.</p>
     </div>
 
     <div class="rule">
         <strong>05 — Club Name and Picture</strong>
-        <p>Every player must provide a club name. If no picture is uploaded, an AI-generated picture will be created.</p>
+        <p>Every participant must provide a club name. If no club picture is uploaded, an AI-generated picture will be created for the club.</p>
     </div>
 
     <div class="rule">
@@ -462,15 +462,18 @@ footer {
 
     <div class="cards">
 
-        <a class="bot-card"
-           href="https://discord.com/oauth2/authorize?client_id=1568303648528662648"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+            class="bot-card"
+            href="https://discord.com/oauth2/authorize?client_id=1568303648528662648"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
 
             <img
                 class="bot-image"
                 src="ticket-bot.jpg"
-                alt="MAD AIRPORT Ticket Bot">
+                alt="MAD AIRPORT Ticket Bot"
+            >
 
             <h3>🎟️ MAD AIRPORT Ticket Bot</h3>
 
@@ -499,11 +502,12 @@ footer {
         aviation and gaming community!
     </p>
 
-    <a class="join-button"
-       href="https://discord.gg/WBRjWgzCtf"
-       target="_blank"
-       rel="noopener noreferrer">
-       ✈️ JOIN MAD AIRPORT
+    <a
+        class="join-button"
+        href="https://discord.gg/WBRjWgzCtf"
+        target="_blank"
+        rel="noopener noreferrer">
+        ✈️ JOIN MAD AIRPORT
     </a>
 </section>
 
